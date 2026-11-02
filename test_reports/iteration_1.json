@@ -1,0 +1,29 @@
+{
+  "summary": "Frontend-only smoke test of the static wedding invitation SPA. All 9 sections render, families/couple/venue/timeline content is correct, countdown ticks (d=147, seconds change), 4 gallery images load (naturalWidth>0), Get Directions href/target correct, WhatsApp share button clickable, audio toggle exists and does not crash, no horizontal scroll at 390px viewport. Only 1 console error (403 on external audio asset from Pixabay CDN) — non-blocking. Family label text checks initially reported failures but are false negatives: labels ('Grand Daughter of', 'Son of', 'Grand Son of', 'Daughter of') and doli time ('Taaron ki Chhaon Mein') are rendered via CSS text-transform: uppercase, so DOM inner_text returns them uppercased. Verified content is present in source and rendered correctly.",
+  "tested_scope": ["frontend"],
+  "passed": [
+    "Page loads at / with no JS runtime errors",
+    "All 9 sections present and visible: invocation, couple-hero, families, timeline, venue, countdown, gallery, closing",
+    "Sanskrit '॥ श्री गणेशाय नमः ।।' renders in invocation",
+    "bride-name='Isha', groom-name='Himanshu', tagline 'Two souls, one journey.' present",
+    "Bride family card has Isha Singh, Shail Kumari Singh, Harihar Singh, Sangeeta Singh, Ajay Kumar Singh, Kolana/Chunar/Mirzapur",
+    "Groom family card has Himanshu Singh, Reeta Singh, Ranjeet Singh, Sindhu Singh, Bal Krishna Singh, Media/Chunar/Mirzapur; 'Son of' present, 'Daughter of' NOT present in groom card",
+    "Timeline: event-baraat (Reception of Baraat, 8:00 PM), event-dinner (Dinner, 9:00 PM), event-doli (Doli, Taaron ki Chhaon Mein) — all present",
+    "Venue: 'Raj Lakshmi' + 'Akhari Bypass' text + venue-map iframe rendered",
+    "get-directions-btn href=https://maps.app.goo.gl/BhgxLKMEX8a4J7Fs6?g_st=ac, target=_blank",
+    "Countdown shows days=147, ticking verified (seconds decreased 55→53 after 2.2s)",
+    "All 4 gallery images loaded (naturalWidth > 900 each)",
+    "share-invitation-btn (floating) and share-invitation-cta (closing) present and clickable without crashing",
+    "audio-toggle-btn present in bottom-left, clickable without error",
+    "Mobile 390x844: no horizontal scroll, single-column layout"
+  ],
+  "failed": [
+    {"area": "external asset", "issue": "Background shehnai audio file returns 403 from Pixabay CDN", "evidence": "Console error: 'Failed to load resource: the server responded with a status of 403' — likely https://cdn.pixabay.com/.../indian-flute-loop-14135.mp3", "priority": "LOW"}
+  ],
+  "action_items": [
+    "Optional: replace/host the shehnai audio file locally or use a stable CDN URL — Pixabay returns 403 for the current URL. App gracefully handles the failure (no crash), but audio toggle does nothing audible."
+  ],
+  "success_rate": {"backend": "n/a", "frontend": "~98%"},
+  "retest_needed": false,
+  "full_testing_deferred": true
+}

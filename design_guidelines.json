@@ -1,0 +1,109 @@
+{
+  "theme_archetype": {
+    "theme": "LIGHT",
+    "archetype": "Archetype 1: Organic & Earthy (Customized for Luxury Editorial Wedding)",
+    "description": "Pinterest mood board, romantic and elegant digital invitation. Soft-luxury feel, abundant white space, type-led layouts, minimal decoration."
+  },
+  "colors": {
+    "background": {
+      "base": "#FAF6F0",
+      "paper": "#FDFBF7",
+      "overlay": "rgba(250, 246, 240, 0.85)"
+    },
+    "text": {
+      "primary": "#332D27",
+      "secondary": "#5C544D",
+      "accent": "#7A1F2B"
+    },
+    "accents": {
+      "maroon": "#7A1F2B",
+      "muted_gold": "#C9A227",
+      "sage_green": "#8A9A5B",
+      "blush_pink": "#E8D3D1"
+    }
+  },
+  "typography": {
+    "headings": {
+      "font_family": "'Cormorant Garamond', serif",
+      "weights": ["400", "500", "600"],
+      "styles": "Elegant, generous line-height, sophisticated scale. Avoid centering everything; use asymmetrical typography blocks where applicable."
+    },
+    "devanagari": {
+      "font_family": "'Noto Serif Devanagari', serif",
+      "weights": ["400", "500"],
+      "styles": "Use specifically for the Sanskrit Ganesh Shloka to ensure cultural authenticity and legibility."
+    },
+    "body": {
+      "font_family": "'Marcellus', sans-serif",
+      "weights": ["400"],
+      "styles": "Light and airy, high legibility, clean sans-serif. Used for timeline, addresses, and secondary info."
+    }
+  },
+  "layout_and_spacing": {
+    "general": "Mobile-first, single-column scroll-based storytelling. Generous vertical spacing (e.g., py-24, py-32). Use negative space as a luxury element to let typography breathe.",
+    "containers": "Bento grids or masonry for gallery photos (asymmetrical). For family cards, use soft alignments with delicate 1px borders in blush pink or muted gold.",
+    "borders": "1px solid rgba(232, 211, 209, 0.5) (blush) or rgba(201, 162, 39, 0.3) (muted gold). Rounded corners for photos (e.g., rounded-2xl or rounded-t-full for arched windows)."
+  },
+  "motion_and_interactions": {
+    "scroll": "Smooth scrolling with Lenis or framer-motion. Staggered fade-up animations on sections.",
+    "hover": "Subtle scale up (scale-[1.02]) for gallery images, soft brightness shifts for buttons.",
+    "parallax": "Gentle parallax effects on background floral images."
+  },
+  "components": {
+    "audio_toggle": "Floating button, bottom right or left. Glassmorphism effect (backdrop-blur). Mute/Unmute icon. Mock Shehnai audio.",
+    "countdown": "Minimalist numbers, thin dividers between DD:HH:MM:SS, elegant labels (Days, Hrs, Mins, Secs).",
+    "share_button": "Prominent floating or footer CTA with WhatsApp icon. Use #25D366 brand color delicately or a luxury styled maroon button with gold text.",
+    "timeline": "Vertical line connecting events, accompanied by lucide-react icons."
+  },
+  "media": {
+    "images": [
+      {
+        "category": "hero_background",
+        "url": "https://images.unsplash.com/photo-1612293025896-7200cc87e540?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwxfHxzb2Z0JTIwd2F0ZXJjb2xvciUyMGZsb3JhbCUyMGJhY2tncm91bmQlMjBibHVzaCUyMGl2b3J5fGVufDB8fHx8MTc4MzE3NTU3Nnww&ixlib=rb-4.1.0&q=85",
+        "description": "Soft pink and white floral watercolor"
+      },
+      {
+        "category": "texture_overlay",
+        "url": "https://images.unsplash.com/photo-1545873509-33e944ca7655?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjd8MHwxfHNlYXJjaHwxfHxwYXJjaG1lbnQlMjBwYXBlciUyMHRleHR1cmUlMjB2aW50YWdlJTIwZ29sZHxlbnwwfHx8fDE3ODI4MTc0MDB8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Vintage gold texture paper for borders or subtle background accents"
+      },
+      {
+        "category": "gallery_couple_1",
+        "url": "https://images.pexels.com/photos/19609201/pexels-photo-19609201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Joyful couple in stylish traditional Indian attire"
+      },
+      {
+        "category": "gallery_couple_2",
+        "url": "https://images.pexels.com/photos/17657612/pexels-photo-17657612.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Indian couple embracing outdoors"
+      },
+      {
+        "category": "gallery_decor_1",
+        "url": "https://images.unsplash.com/photo-1708606811579-23b18fc48007",
+        "description": "Decorated stage with a chandelier"
+      },
+      {
+        "category": "gallery_decor_2",
+        "url": "https://images.unsplash.com/photo-1587271636175-90d58cdad458",
+        "description": "People sitting under floral umbrella"
+      }
+    ],
+    "icons_library": "lucide-react (Icons: Music/AudioLines for shehnai, Utensils for dinner, MoonStar for doli)",
+    "audio_placeholder": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+  },
+  "instructions_to_main_agent": [
+    "Build a mobile-first, single-page static site. Use React (JS, not TS) + Tailwind.",
+    "Include <link href='https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Noto+Serif+Devanagari:wght@400;500&family=Marcellus&display=swap' rel='stylesheet'> in your public/index.html or via @import in CSS.",
+    "Section 1: Opening Invocation with Sanskrit Ganesh shloka (॥ श्री गणेशाय नमः ।। ...) centered, using Noto Serif Devanagari font.",
+    "Section 2: Couple Hero with 'Isha ♥ Himanshu' large text, tagline 'Two souls, one journey', overlay on the hero_background image.",
+    "Section 3 & 4: Bride and Groom family cards elegantly laid out side-by-side on desktop, stacked on mobile. Ensure names and parents/grandparents structure match exactly as provided.",
+    "Section 5: Event timeline for Sunday, 29th November 2026. Reception of Barat 8PM (icon: AudioLines/Music), Dinner 9PM (icon: Utensils), Doli - Taaron ki Chhaon Mein (icon: MoonStar).",
+    "Section 6: Venue card featuring Raj Lakshmi Restaurant & Banquet Hall. Include an embedded Google map (iframe) of Varanasi, UP, and a 'Get Directions' link (href: https://maps.app.goo.gl/BhgxLKMEX8a4J7Fs6).",
+    "Section 7: Countdown timer strictly counting down to Nov 29, 2026. Use JS intervals.",
+    "Section 8: Photo gallery (4 photos) using a Pinterest-style asymmetrical grid or masonry layout.",
+    "Section 9: Closing message ('With love and blessings...').",
+    "Section 10: Fixed/floating WhatsApp 'Share Invitation' button (intent: wa.me/?text=...).",
+    "Section 11: Fixed/floating Background shehnai audio toggle (Mute/Unmute) using the HTML5 Audio API. Auto-play might be blocked by browsers, so play on first user interaction.",
+    "CRITICAL: All interactive and key informational elements (buttons, links, inputs) MUST have a `data-testid` attribute in kebab-case."
+  ]
+}
