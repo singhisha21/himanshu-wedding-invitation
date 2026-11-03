@@ -341,7 +341,7 @@ export default function WeddingInvitation() {
               },
               {
                 icon: MoonStar,
-                title: "Doli",
+                title: "Vidai",
                 time: "Taaron ki Chhaon Mein",
                 note: "Under a canopy of stars",
                 testId: "event-doli",
@@ -632,7 +632,7 @@ export default function WeddingInvitation() {
           </h2>
           <LeafSpray className="mx-auto mt-8 h-8 w-48" flip />
           <p className="mt-10 text-[11px] uppercase tracking-[0.5em] text-ink-soft">
-            Isha &nbsp; · &nbsp; Himanshu
+            Himanshu &nbsp; · &nbsp; Isha
           </p>
           <p className="mt-2 text-[11px] uppercase tracking-[0.5em] text-gold">
             29 November 2026
@@ -652,6 +652,10 @@ export default function WeddingInvitation() {
               <p>Mr. Pradeep Kumar Singh</p>
               <p>Mr. Girish Kumar Singh</p>
               <p>Mr. Mukesh Kumar Singh</p>
+              <p>Dr. Rajeev Ranjan Sinha</p>
+              <p>Naveen Singh</p>
+              <p>Manoj Kumar Singh</p>
+              <p>Jaikrishna Singh</p>
             </div>
 
             <div className="my-6 divider-ornament">
@@ -661,14 +665,14 @@ export default function WeddingInvitation() {
             <p className="font-serif-display italic text-[15px] sm:text-base text-ink-soft leading-relaxed">
               Nikhil &nbsp;·&nbsp; Priyanka &nbsp;·&nbsp; Nitesh
               <br />
-              Nishant &nbsp;·&nbsp; Prasant &nbsp;·&nbsp; Piyush
+              Nishant &nbsp;·&nbsp; Prasant &nbsp;·&nbsp; Piyush &nbsp;·&nbsp; Pragya
               <br />
-              Pragya &nbsp;·&nbsp; Shashank &nbsp;·&nbsp; Mayank
-              <br /> Ayush &nbsp; and Singh family
+              Shashank &nbsp;·&nbsp; Mayank &nbsp;·&nbsp; Ayush
+              
             </p>
 
             <p className="mt-6 text-[11px] uppercase tracking-[0.4em] text-maroon">
-              &amp; all the Darbar family
+              &amp; Singh family
             </p>
 
             <div className="my-6 divider-ornament">
@@ -695,7 +699,7 @@ export default function WeddingInvitation() {
       </section>
 
       <footer className="py-8 text-center text-[10px] uppercase tracking-[0.4em] text-ink-soft">
-        Made with <Heart className="inline h-3 w-3 text-maroon fill-current" strokeWidth={0} /> for Isha &amp; Himanshu
+        Made with <Heart className="inline h-3 w-3 text-maroon fill-current" strokeWidth={0} /> for Himanshu &amp; Isha
       </footer>
     </div>
   );
