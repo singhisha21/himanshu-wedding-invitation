@@ -653,9 +653,9 @@ export default function WeddingInvitation() {
               <p>Mr. Girish Kumar Singh</p>
               <p>Mr. Mukesh Kumar Singh</p>
               <p>Dr. Rajeev Ranjan Sinha</p>
-              <p>Naveen Singh</p>
-              <p>Manoj Kumar Singh</p>
-              <p>Jaikrishna Singh</p>
+              <p>Mr. Naveen Singh</p>
+              <p>Mr. Manoj Kumar Singh</p>
+              <p>Mr. Jaikrishna Singh</p>
             </div>
 
             <div className="my-6 divider-ornament">
@@ -671,6 +671,12 @@ export default function WeddingInvitation() {
               
             </p>
 
+            <div className="my-6 divider-ornament">
+              <Sparkles className="h-3 w-3" strokeWidth={1.4} />
+            </div>
+            <p className="font-serif-display italic text-[15px] sm:text-base text-ink-soft leading-relaxed">
+              Trisha &nbsp;·&nbsp; Mishkha &nbsp;·&nbsp; Rivaan
+            </p>
             <p className="mt-6 text-[11px] uppercase tracking-[0.4em] text-maroon">
               &amp; Singh family
             </p>
