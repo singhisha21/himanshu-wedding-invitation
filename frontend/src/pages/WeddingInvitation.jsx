@@ -240,7 +240,7 @@ export default function WeddingInvitation() {
                   </span>
                   Late Smt. Reeta Singh
                   <br />
-                  &amp; Late Shri Ranjeet Singh
+                  &amp; Late Dr. Ranjeet Singh
                 </p>
 
                 <p>
@@ -632,7 +632,7 @@ export default function WeddingInvitation() {
           </h2>
           <LeafSpray className="mx-auto mt-8 h-8 w-48" flip />
           <p className="mt-10 text-[11px] uppercase tracking-[0.5em] text-ink-soft">
-            Himanshu &nbsp; · &nbsp; Isha
+            Himanshu &nbsp; &amp; &nbsp; Isha
           </p>
           <p className="mt-2 text-[11px] uppercase tracking-[0.5em] text-gold">
             29 November 2026
